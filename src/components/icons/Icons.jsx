@@ -35,7 +35,7 @@ const Icons = ({ showMenu, setShowMenu }) => {
 
       <button
         onClick={() => dispatch(authActions.logout())}
-        className="bg-red-600 text-white py-2"
+        className="lg:hidden bg-red-600 text-white py-2"
       >
         Logout
       </button>
