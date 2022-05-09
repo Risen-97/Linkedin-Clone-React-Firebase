@@ -1,7 +1,7 @@
 import React from "react";
 import FormFooter from "../components/form/FormFooter";
 import LoginForm from "../components/form/LoginForm";
-import Linkdin from "../components/Icons/Linkdin";
+import Linkdin from "../components/icons/Linkdin";
 const Login = () => {
   return (
     <section className="flex flex-col items-center justify-center pt-32 h-screen  ">
