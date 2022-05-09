@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BiSearchAlt2, BiMenu } from "react-icons/bi";
-import Linkdin from "../Icons/Linkdin";
+import Linkdin from "../icons/Linkdin";
 import useClickOutside from "../../hooks/useClickOutside";
 import Icons from "../icons/Icons";
 const Navbar = () => {
