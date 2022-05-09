@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply lg:border-b lg:border-sky-300 text-black;
+}
+
+.sidebarLinks {
+  @apply hover:underline hover:underline-offset-8 cursor-pointer text-blue-400;
+}
+
+.card {
+  @apply bg-white rounded-lg overflow-hidden mb-5;
+}
+
+.postBtn {
+  @apply flex items-center gap-2 p-4 hover:bg-slate-100 rounded-lg disabled:bg-gray-400 disabled:text-black disabled:cursor-not-allowed;
+}
+
+.footer__link {
+  @apply text-sm opacity-80 hover:underline hover:underline-offset-8 cursor-pointer;
+}
