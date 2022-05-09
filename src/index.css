@@ -15,7 +15,7 @@
 }
 
 .postBtn {
-  @apply flex items-center gap-2 p-4 hover:bg-slate-100 rounded-lg disabled:bg-gray-400 disabled:text-black disabled:cursor-not-allowed;
+  @apply flex items-center gap-2 my-2 md:my-0 md:p-4 hover:bg-slate-100 rounded-lg disabled:bg-gray-400 disabled:text-black disabled:cursor-not-allowed;
 }
 
 .footer__link {

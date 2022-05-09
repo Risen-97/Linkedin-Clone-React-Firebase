@@ -5,7 +5,7 @@ import Sidebar from "../components/layout/Sidebar";
 
 const Home = () => {
   return (
-    <section className="flex px-4 py-8 lg:px-0 gap-8 ">
+    <section className="flex px-4 py-8 lg:px-0 sm:gap-8 ">
       <Sidebar />
       <Feed />
       <Rightbar />

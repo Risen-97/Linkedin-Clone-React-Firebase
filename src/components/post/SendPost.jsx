@@ -82,9 +82,9 @@ const SendPost = () => {
   useEffect(() => {}, [file]);
   return (
     <div className="card p-4">
-      <div className="flex items-center gap-3 mb-1">
+      <div className="flex items-center  gap-3 mb-1">
         <div
-          className={`w-14 h-14 overflow-hidden ${
+          className={`w-11 h-11 md:w-14 md:h-14 overflow-hidden ${
             checkAvatar ? user.avatar : ""
           } rounded-full flex items-center justify-center text-3xl text-white`}
         >
@@ -96,19 +96,21 @@ const SendPost = () => {
         </div>
         <form
           onSubmit={postSubmitHandler}
-          className="flex-1 flex items-center  rounded-3xl border border-slate-500 cursor-pointer overflow-hidden"
+          className="flex-1 flex items-center  rounded-3xl border border-slate-500 cursor-pointer overflow-hidden text-sm smtext-md"
         >
           <input
             ref={messageRef}
             type="text"
-            className="flex-1 bg-transparent px-4 py-3 outline-none border-none"
+            className="flex-1 bg-transparent p-2 sm:p-4 outline-none border-none"
             placeholder="Start a post"
           />
-          <button className="bg-sky-700 h-full p-4 text-white">Send</button>
+          <button className="bg-sky-700 h-full p-2 sm:p-4 text-white">
+            Send
+          </button>
         </form>
       </div>
 
-      <div className="flex item-center justify-between">
+      <div className="flex item-center flex-wrap justify-between">
         <div className="relative">
           <button
             disabled={loading}

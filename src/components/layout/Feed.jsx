@@ -19,7 +19,7 @@ const Feed = () => {
   };
 
   return (
-    <div className="flex-[4] rounded-lg">
+    <div className="flex-[4] ">
       <SendPost />
 
       {loading && (

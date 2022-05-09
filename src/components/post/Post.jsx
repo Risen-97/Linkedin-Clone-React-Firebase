@@ -37,8 +37,10 @@ const Post = forwardRef((props, ref) => {
           </div>
 
           <div className="flex flex-col ">
-            <span className="text-md">{postInfo?.user}</span>
-            <span className="text-sm opacity-70">{postInfo?.email}</span>
+            <span className="text-sm sm:text-md">{postInfo?.user}</span>
+            <span className="text-xs sm:text-sm opacity-70">
+              {postInfo?.email}
+            </span>
             {postInfo.timestamp && (
               <span className="text-xs opacity-70">{result}</span>
             )}
@@ -59,11 +61,10 @@ const Post = forwardRef((props, ref) => {
         )}
       </div>
 
-      <div className="">
-        {/* <p className=" p-4">{wordsHandler(postInfo.text, 380)}</p> */}
+      <div className="text-xs sm:text-md">
         {postInfo?.message.length > 300 && (
           <div className="">
-            <p className=" p-4">
+            <p className="p-4">
               {moreText
                 ? postInfo?.message.slice(0)
                 : postInfo?.message.slice(0, 300)}
@@ -87,13 +88,13 @@ const Post = forwardRef((props, ref) => {
             onClick={() =>
               dispatch(modalActions.openModal({ ...postInfo, result }))
             }
-            className="cursor-pointer min-h-[300px]"
+            className="cursor-pointer md:min-h-[300px]"
           >
             {postInfo?.imageUrl == "" && (
               <div className="bg-slate-800 animate-pulse w-full h-[300px] z-10"></div>
             )}
             <img
-              className={`max-h-[600px] w-full object-cover 0`}
+              className={`max-h-[300px] md:max-h-[600px] w-full object-cover`}
               src={postInfo?.imageUrl}
             />
           </div>

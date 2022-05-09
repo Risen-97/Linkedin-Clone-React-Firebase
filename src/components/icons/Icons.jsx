@@ -1,8 +1,12 @@
 import React from "react";
 import { navLinks } from "../../data";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { authActions } from "../../store/authSlice";
 const Icons = ({ showMenu, setShowMenu }) => {
   const activeNav = ({ isActive }) => (isActive ? "active" : null);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   return (
     <ul
@@ -28,6 +32,13 @@ const Icons = ({ showMenu, setShowMenu }) => {
           </NavLink>
         );
       })}
+
+      <button
+        onClick={() => dispatch(authActions.logout())}
+        className="bg-red-600 text-white py-2"
+      >
+        Logout
+      </button>
     </ul>
   );
 };
