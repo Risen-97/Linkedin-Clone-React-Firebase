@@ -1,7 +1,7 @@
 import React from "react";
 import FormFooter from "../components/form/FormFooter";
 import SignupForm from "../components/form/SignupForm";
-import Linkdin from "../components/Icons/Linkdin";
+import Linkdin from "../components/icons/Linkdin";
 
 const Signup = () => {
   return (
